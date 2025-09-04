@@ -10,13 +10,27 @@
 @theme inline {
   --color-theme-black: var(--background);
   --color-theme-foreground: var(--foreground);
-  --color-theme-primary:var(--theme);
-  --color-theme-background:var(--backgroundAshed);
+  --color-theme-primary: var(--theme);
+  --color-theme-background: var(--backgroundAshed);
   --font-text: var(--font-poppins);
   --font-title: var(--font-mate);
   --font-subtitle: var(--font-cap);
-}
+  --text-shadow-themed: 2px 3px var(--theme);
 
+  --shadow-theme-style: 0px 0px 14px 0px #798026;
+  --brightness-theme: 1.2;
+}
+@theme {
+  --animate-opacity-in: opac_in 150ms ease-in;
+  @keyframes opac_in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
 body {
   background: var(--backgroundAshed);
   color: var(--foreground);
