@@ -37,7 +37,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     ref
   ) => {
     const baseStyle: string =
-      "w-full px-3 py-2 rounded-none transition-all duration-200";
+      "w-full  lg:py-2 sm:py-2 py-1 px-2 lg:px-4 sm:px-4  rounded-none transition-all duration-200 text-xs lg:text-lg sm:text-sm";
     const outlinedStyle =
       "border border-theme-primary focus:outline-none focus:ring-4 focus:ring-theme-primary/40 ";
     const filledStyle =
@@ -48,7 +48,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         : variant === "filled"
         ? "input-variant-filled" + " " + baseStyle + " " + filledStyle
         : " ";
-
+    const compulsoryStyle: string =
+      "read-only:focus:ring-0 read-only:cursor-auto read-only:text-theme-primary read-only:bg-transparent read-only:placeholder:text-theme-primary disabled:border-gray-700/70 disabled:text-gray-600/60 disabled:cursor-not-allowed disabled:select-none";
     return (
       <>
         <div className="flex flex-col gap-2">
@@ -58,7 +59,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           <input
             ref={ref}
             id={id}
-            className={clsx(variantClass, className)}
+            className={clsx(variantClass, compulsoryStyle, className)}
             {...rest}
           />
         </div>

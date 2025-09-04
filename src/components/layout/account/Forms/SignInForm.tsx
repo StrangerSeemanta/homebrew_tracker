@@ -7,19 +7,20 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 
-function SignUpForm() {
+function SignInForm() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <>
-      <div className="min-w-[400px] min-h-[400px] border-4 border-double border-theme-primary p-6 rounded-none ">
+      <div className="min-w-[450px] min-h-[400px] border-4 border-double border-theme-primary p-6 rounded-none ">
         <h1 className="text-4xl font-subtitle mb-5 text-theme-foreground text-shadow-themed">
-          Sign Up !
+          Log In !
         </h1>
 
         <form action="#" className="flex flex-col gap-4 ">
           <Input
             label="Email"
             id="email"
+            name="email"
             variant={"outlined"}
             placeholder="Enter your email"
             autoComplete="email"
@@ -29,6 +30,7 @@ function SignUpForm() {
             <Input
               label="password"
               id="password"
+              name="password"
               placeholder="Enter your password"
               type={showPassword ? "text" : "password"}
               autoComplete="password"
@@ -49,7 +51,7 @@ function SignUpForm() {
             variant="filled"
             className=" flex items-center justify-center gap-2"
           >
-            <span>Sign Up</span>
+            <span>Log In</span>
             <BsArrowRight className="group-hover:underline" />
           </Button>
         </form>
@@ -70,4 +72,4 @@ function SignUpForm() {
   );
 }
 
-export default SignUpForm;
+export default SignInForm;

@@ -7,7 +7,7 @@ function GetStarted_btn() {
   const router = useRouter();
   return (
     <Button
-      onClick={() => router.push("/account/login")}
+      onClick={() => router.push("/dashboard")}
       variant="filled"
       className="mt-5"
     >

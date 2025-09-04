@@ -12,7 +12,7 @@ function AccountLogInPage() {
           width={500}
           height={500}
           src={AccBg}
-          className="select-none"
+          className="select-none not-lg:hidden"
         />
       </div>
     </section>
