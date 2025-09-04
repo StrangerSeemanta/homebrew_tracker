@@ -10,7 +10,7 @@ const Title = forwardRef<HTMLHeadingElement, TitleProps>(
     <h1
       ref={ref}
       {...props}
-      className={`title tracking-wide text-center text-4xl sm:text-7xl xl:text-8xl ${className}`}
+      className={`title tracking-wide text-center text-4xl sm:text-6xl xl:text-8xl ${className}`}
     >
       {children}
     </h1>

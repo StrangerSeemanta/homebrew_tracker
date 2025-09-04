@@ -4,15 +4,17 @@
   --background: #04021f;
   --backgroundAshed: #1e1f22;
   --foreground: #ffffff;
-  --theme:#798026;
+  --theme: #798026;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-theme-black: var(--background);
+  --color-theme-foreground: var(--foreground);
+  --color-theme-primary:var(--theme);
+  --color-theme-background:var(--backgroundAshed);
   --font-text: var(--font-poppins);
   --font-title: var(--font-mate);
-  --font-sub: var(--font-cap);
+  --font-subtitle: var(--font-cap);
 }
 
 body {

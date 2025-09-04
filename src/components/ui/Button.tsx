@@ -41,7 +41,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         {...rest}
-        className={`lg:py-2 py-1 px-2 lg:px-4 text-xs lg:text-lg btn-${variant} ${
+        className={`lg:py-2 sm:py-2 py-1 px-2 lg:px-4 sm:px-4 text-xs lg:text-lg sm:text-sm btn-${variant} ${
           className ?? ""
         }`}
       >
